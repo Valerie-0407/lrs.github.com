@@ -1,0 +1,249 @@
+*
+{
+    margin: 0 auto;
+    padding: 0;
+}
+body
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    background-color: black;
+    background-size: 1500px 1000px;
+    background-image: url(../img/2.1.jpg);
+    background-position: center;
+    background-repeat: repeat;
+    overflow-x: hidden;
+
+}
+body #inner
+{
+    width: auto;
+    height: auto;
+    background-color: white;
+    opacity: 0.9;
+}
+/* 页眉区 */
+header 
+{
+    width: auto;
+    height: 100px;
+    padding: 3px;
+    /* margin-top: 5px; */
+    margin-bottom: 5px;
+
+}
+header #inner
+{
+    width: 95%;
+    height: 80%;
+    background-image: url(../img/2.2.jpg);
+    border-radius: 10px;
+    padding-top: 10px;
+
+}
+header #inner h1
+{
+    font-size: 50px;
+    color: white;
+    font-weight: bolder;
+    word-spacing: 10px;
+    text-indent: 2em;
+    text-align: left;
+    vertical-align: middle;
+    display: inline-block;
+    text-shadow: azure -5px -5px 10px;
+
+    background: 
+    -webkit-linear-gradient(45deg, #70f7fe, #fbd7c6, #ffffff, #bfb5dd, #bed5f5);
+    -moz-linear-gradient(45deg, #70f7fe, #ffffff, #fdefac, #bfb5dd, #bed5f5);
+    -ms-linear-gradient(45deg, #70f7fe, #ffffff, #fdefac, #bfb5dd, #bed5f5);
+    /*设置字体颜色透明*/
+    color: transparent;
+    /*背景裁剪为文本形式*/
+    -webkit-background-clip: text;
+    /*动态10s展示*/ 
+    animation: ran 5s ease-in-out infinite;
+}
+/* 主内容区 */
+#main 
+{
+    width: 1500px;
+    min-height: 900px;
+    height: 900px;
+
+}
+#main #inner
+{
+    width: 95%;
+    min-height: 900px;
+    height: 900px;
+}
+/* 内容区1-Home */
+#main .content1
+{
+    width: 20%;
+    height: 90%;
+    float: left;
+}
+#main .content1-1
+{
+    width: 95%;
+    height: 250px;
+    padding: 0;
+    transform-style: preserve-3d;
+    border: white 5px ridge;
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-left: 25px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bolder;
+    box-shadow: -5px -5px 5px lightblue;
+}
+/* 内容区1-n */
+#main .content1-1 .inner
+{
+    width: 95%;
+    height: 75%;
+    padding: 25px 10px;
+    
+}
+#main .content1-1 table
+{
+    width: 100%;
+    border: 1px black dashed;
+    text-align: left;
+}
+#main .content1-1 table td
+{
+    border: black dashed;
+    border-width: 1px 0;
+    height: 30px;
+}
+#main .content1-1 table .td
+{
+    height: 40px;
+    text-align: center;
+    font-size: 25px;
+    background: 
+    -webkit-linear-gradient(45deg, #70f7fe, yellow, black,  #bed5f5);
+    -moz-linear-gradient(45deg, #70f7fe, yellow, black,  #bed5f5);
+    -ms-linear-gradient(45deg, #70f7fe, yellow, black,  #bed5f5);
+    /*设置字体颜色透明*/
+    color: transparent;
+    /*背景裁剪为文本形式*/
+    -webkit-background-clip: text;
+    /*动态10s展示*/
+    animation: ran 10s ease-in infinite;
+}
+@keyframes ran
+{
+    from {
+        backgroud-position: 0 0;
+    }
+    to {
+        background-position: 2000px 0px;
+    }
+}
+#main .content1-1 img
+{
+    width: 250px;
+    height: 225px;
+}
+/* 内容区2-HomeTown */
+#main .content2
+{
+    width: 70%;
+    height: 880px;
+    padding: 0;
+    margin-top: 25px;
+    margin-left: 10px;
+    float: right;
+
+}
+#main .content2 .inner
+{
+ 
+}
+/* 内容区2-1 循环图片播放 */
+#main .content2 .imgBox
+{
+    width: 50%;
+    height: 250px;
+    border-radius: 50%;
+    border: 1px dashed black;
+    box-shadow: -5px -5px 5px lightblue;
+
+}
+#main .content2 .imgBox img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    margin: 0 auto;
+
+}
+#main .content2 .img1{
+    display: block;
+}
+
+#main .content2 .img2{
+    display: none;
+}
+/* 内容2-2-介绍家乡 */
+#main .content2 .text
+{
+    width: 100%;
+    height: 550px;
+    margin-top: 30px;
+    margin-left: -20px;
+    font-family: STFangsong;
+}
+#main .content2 .text hr
+{
+    width:100%;
+    height: 5px;
+    border: 0;
+    margin: 0px auto;
+    background-image: linear-gradient(to right , rgba(206, 234, 241, 0.644),rgba(146, 190, 240, 0.75) ,rgba(186, 156, 241, 0) );
+    margin-bottom: 5px;
+}
+#main .content2 .text table td
+{
+    border-top: 1px black dashed;
+    margin-top: 5px;
+}
+#main .content2 .text table .td
+{
+    width: 2%;
+    height: auto;
+    border-right: 1px black dashed;
+}
+#main .content2 .text table .td0
+{
+    border-bottom:  1px black dashed;
+}
+/* 页脚区 */
+footer
+{
+    width: auto;
+    height:25px;
+    
+}
+footer #inner
+{
+    width: 95%;
+    height: 95%;
+    border-top: #000 1px double;
+    margin: 0 auto;
+}
+footer #inner p
+{
+    text-align: left;
+    font-size: 15px;
+    font-style: oblique;
+    word-spacing: 7.5px;
+    padding-top: 3px;
+
+}
